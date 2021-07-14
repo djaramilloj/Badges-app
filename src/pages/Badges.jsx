@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Navbar from '../components/Navbar.jsx';
 import BadgesList from '../components/BadgesList';
 
 import './styles/badges.css';
@@ -41,8 +40,7 @@ class Badges extends React.Component {
     }
     render() {
         return (
-            <div>
-                <Navbar />
+            <React.Fragment>
                 <div className="Badges">
                     <div className="Badges__hero">
                         <div className="Badges__container">
@@ -68,7 +66,7 @@ class Badges extends React.Component {
                         </div>
                     </div>
                 </div>
-            </div>
+            </React.Fragment>
         )
     }
 }
